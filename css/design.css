@@ -60,6 +60,7 @@ main {
 
 section {
   margin-bottom: 30px;
+  text-align: center; /* Alinhar o conteúdo do section ao centro */
 }
 
 h2 {
@@ -76,6 +77,9 @@ img {
   margin-bottom: 15px;
   border-radius: 5px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  display: block; /* Alinhar a imagem ao centro */
+  margin-left: auto;
+  margin-right: auto;
 }
 
 footer {
@@ -86,23 +90,31 @@ footer {
   font-size: 14px;
 }
 
-
-@media (max-width: 768px) {
+/* Consulta de mídia para dispositivos móveis */
+@media (max-width: 480px) {
   h1 {
-    font-size: 28px;
+    font-size: 24px;
+    text-align: center;
   }
 
   h2 {
-    font-size: 24px;
+    font-size: 20px;
+    text-align: center; /* Alinhar o título ao centro */
   }
 
   img {
     margin-left: auto;
     margin-right: auto;
+    display: block;
+  }
+
+  nav ul li {
+    display: block;
+    margin-right: 0;
+    margin-bottom: 10px;
   }
 
   main {
     padding: 10px;
   }
 }
-
